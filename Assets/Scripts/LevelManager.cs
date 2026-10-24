@@ -7,5 +7,5 @@ public class LevelManager : MonoBehaviour
     public void RestartGame() => Load("Game");
     public void LoadMainMenu() => Load("MainMenu");
     public void QuitGame() { PlayerPrefs.Save(); Application.Quit(); }
-    public static void Load(string scene) { Time.timeScale = 1; LighterInput.Reset(); SceneManager.LoadScene(scene); }
+    public static void Load(string scene) { Time.timeScale = 1; LighterInput.Reset(); SceneManager.LoadScene(scene); Debug.Log("Anmol DevOps Testing!"); }
 }
